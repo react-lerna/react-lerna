@@ -1,3 +1,6 @@
+[submodule "apps/webapp"]
+	path = apps/webapp
+	url = git@github.com:react-lerna/webapp.git
 [submodule "apps/blog"]
 	path = apps/blog
 	url = git@github.com:react-lerna/blog.git
