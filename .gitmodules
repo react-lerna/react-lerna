@@ -1,15 +1,15 @@
 [submodule "apps/blog"]
 	path = apps/blog
 	url = git@github.com:react-lerna/blog.git
-
 [submodule "apps/shop"]
 	path = apps/shop
 	url = git@github.com:react-lerna/shop.git
-
 [submodule "apps/admin-blog"]
 	path = apps/admin-blog
 	url = git@github.com:react-lerna/admin-blog.git
-
 [submodule "apps/admin-shop"]
 	path = apps/admin-shop
 	url = git@github.com:react-lerna/admin-shop.git
+[submodule "packages/ui-components"]
+	path = packages/ui-components
+	url = git@github.com:react-lerna/ui-components.git
