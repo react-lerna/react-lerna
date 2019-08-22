@@ -2,6 +2,7 @@
   "name": "react-lerna",
   "version": "0.1.0",
   "scripts": {
+    "dev:webapp": "cd apps/webapp && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
     "devDependencies": {
