@@ -1,0 +1,3 @@
+[submodule "apps/blog"]
+	path = apps/blog
+	url = git@github.com:react-lerna/blog.git
