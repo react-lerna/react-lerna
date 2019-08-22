@@ -1,0 +1,14 @@
+{
+  "name": "react-lerna",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-lerna/react-lerna.git"
+  },
+  "author": "João Belo <joaobelo.dev@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/react-lerna/react-lerna#readme"
+}
