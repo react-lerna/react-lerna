@@ -4,6 +4,7 @@
   "scripts": {
     "dev:webapp": "cd apps/webapp && npm run dev",
     "dev:ui": "cd packages/ui-components && npm start",
+    "version": "lerna version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
     "devDependencies": {
