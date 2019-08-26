@@ -4,12 +4,17 @@
   "scripts": {
     "dev:webapp": "cd apps/webapp && npm run dev",
     "dev:ui": "cd packages/ui-components && npm start",
-    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:bootstrap": "cd apps/webapp && lerna bootstrap",
     "lerna:changed": "lerna changed",
     "lerna:publish": "lerna publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lerna:ls": "lerna ls",
+    "nuke": "lerna clean && rm -rf node_modules && rm -rf packages/ui-components/dist",
+    "test": "lerna run test",
+    "clear": "rm -rf packages/ui-components/dist",
+    "build": "lerna exec --scope @react-lerna/ui-components -- yarn build"
   },
-    "devDependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "lerna": "^3.16.4"
   },
   "repository": {
@@ -18,5 +23,10 @@
   },
   "author": "João Belo <joaobelo.dev@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/react-lerna/react-lerna#readme"
+  "homepage": "https://github.com/react-lerna/react-lerna#readme",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
