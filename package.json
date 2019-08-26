@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev:webapp": "cd apps/webapp && npm run dev",
-    "dev:ui": "cd packages/ui-components && npm start",
+    "storybook": "cd packages/ui-components && npm start",
     "lerna:bootstrap": "cd apps/webapp && lerna bootstrap",
     "lerna:changed": "lerna changed",
     "lerna:publish": "lerna publish",
