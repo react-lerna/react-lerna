@@ -2,7 +2,7 @@
   "name": "react-lerna",
   "version": "0.1.0",
   "scripts": {
-    "dev:webapp": "cd apps/webapp && npm run dev",
+    "dev:web": "cd apps/webapp && npm run dev",
     "dev:ui": "cd packages/ui-components && npm start",
     "build:ui": "lerna exec --scope @react-lerna/ui-components -- yarn build",
     "bootstrap": "lerna bootstrap --use-workspaces",
