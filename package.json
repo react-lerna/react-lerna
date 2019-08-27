@@ -3,19 +3,27 @@
   "version": "0.1.0",
   "scripts": {
     "dev:webapp": "cd apps/webapp && npm run dev",
-    "storybook": "cd packages/ui-components && npm start",
-    "lerna:bootstrap": "cd apps/webapp && lerna bootstrap",
+    "dev:ui": "cd packages/ui-components && npm start",
+    "build:ui": "lerna exec --scope @react-lerna/ui-components -- yarn build",
+    "bootstrap": "lerna bootstrap --use-workspaces",
     "lerna:changed": "lerna changed",
     "lerna:publish": "lerna publish",
     "lerna:ls": "lerna ls",
-    "nuke": "lerna clean && rm -rf node_modules && rm -rf packages/ui-components/dist",
-    "test": "lerna run test",
-    "clear": "rm -rf packages/ui-components/dist",
-    "build": "lerna exec --scope @react-lerna/ui-components -- yarn build"
+    "nuke": "lerna clean -y && rm -rf node_modules && rm -rf packages/ui-components/dist",
+    "test": "lerna run test"
   },
-  "dependencies": {},
   "devDependencies": {
-    "lerna": "^3.16.4"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-minify": "^0.5.1",
+    "lerna": "^3.16.4",
+    "prettier": "^1.18.2",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
   },
   "repository": {
     "type": "git",
