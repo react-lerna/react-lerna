@@ -34,11 +34,6 @@
     "type": "git",
     "url": "git+https://github.com/react-lerna/react-lerna.git"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn test"
-    }
-  },
   "author": "João Belo <joaobelo.dev@gmail.com>",
   "license": "ISC",
   "homepage": "https://github.com/react-lerna/react-lerna#readme",
